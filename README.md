@@ -1,5 +1,5 @@
-# CRUD - PHP (Estoque de produtos)
-O CRUD-PHP (Estoque de produtos) é um projeto desenvolvido para controle de estoque de empresas que trabalham com produtos, os usuários podem se cadastrar no sistema, cadastrar seus produtos, categorias e seus fornecedores. Para ter um controle básico de seu estoque de produtos.
+# DESAFIO  - CRUD de Produtos
+Este Projeto foi desenvolvido utilizando as seguintes tecnologias:
 
 ![](https://img.shields.io/github/languages/top/danielalves96/PHP-CRUD-Stock)
 

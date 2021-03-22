@@ -31,7 +31,7 @@
             <br>
             <br>
             <table class="table" id="table_id" style="font-size:9pt">
-                <thead>
+                <thead style="background-color:rgb(150,150,150)">
                     <tr>
                         <th scope="col">Nome do produto</th>
                         <th scope="col" style="min-width: 120px;">Preço</th>
@@ -64,8 +64,16 @@
                         $dtcompra= $array['datacompra'];
                 ?>
                     <tr>
-                        <td style="vertical-align: inherit;"> <?php echo $nomeproduto ?> </td>
-                        <td style="vertical-align: inherit;">R$ <?php echo $numproduto ?> </td>
+                        <td style="vertical-align: inherit;font-size:11pt"> <?php echo $nomeproduto ?> </td>
+                        <td style="vertical-align: inherit;">
+                            <section style="font-size:16pt">R$ 
+                                <?php echo number_format(round($numproduto,2),2,",",".")?>
+                            </section>
+                            <section style="color:blue">US$
+                                <?php echo number_format(round($numproduto/3.599,2),2,',','.')?>
+                            </section>
+                            
+                        </td>
                         <td style="vertical-align: inherit;"> <?php echo $quantidade ?> </td>
                         <td style="vertical-align: inherit;"> <?php echo $categoria ?> </td>
                         <td style="vertical-align: inherit;"> <?php echo $descricao ?> </td>

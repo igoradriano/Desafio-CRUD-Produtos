@@ -18,6 +18,11 @@ $id = $_GET['id'];
     <style>
     #container {
         width: 500px;
+        border-radius: 15px;
+        border: 0.2em solid;
+        padding: 20px;
+        border-color: #cfd6dc;
+        background-color:rgb(230,230,250);
     }
     </style>
 
@@ -26,9 +31,7 @@ $id = $_GET['id'];
 <body>
 
     <div class="container" style="margin-top: 40px" id="container">
-
-        <h3>Formulário de cadastro</h3>
-
+        <h3 style="text-align:center">Formulário de cadastro </h3>
         <form action="_atualizar_produto.php" method="post" style="margin-top: 20px">
             <?php 
             
@@ -41,17 +44,34 @@ $id = $_GET['id'];
                 $categoria = $array['categoria'];
                 $quantidade = $array['quantidade'];
                 $fornecedor = $array['fornecedor'];
+                $descricao = $array['descricaoproduto'];
+                $origem = $array['origem'];
 
             ?>
-            <div class="form-group">
-                <label>Número do produto</label>
-                <input type="number" class="form-control" name="numproduto" value="<?php echo $numproduto?>" disabled>
+             <div class="form-group">
+                <label>Número do Produto</label>
+                <input type="number" class="form-control" name="id_estoque" value="<?php echo $id_estoque?>" disabled>
                 <input type="number" class="form-control" name="id" value="<?php echo $id?>" style="display:none;">
             </div>
+
             <div class="form-group">
                 <label>Nome do produto</label>
                 <input type="text" class="form-control" name="nomeproduto" value="<?php echo $nomeproduto?>">
             </div>
+
+            <div class="form-group">
+                <label>Preço do produto</label>
+                <div class="input-group">
+                        <div class="input-group-text">R$</div>
+                        <input type="number" min="0.00" step="0.01" id="exampleInputAmount" class="form-control" name="numproduto" value="<?php echo $numproduto?>">
+                </div> 
+            </div>
+
+            <div class="form-group">
+                <label>Quantidade</label>
+                <input type="number" class="form-control" name="quantidade" value="<?php echo $quantidade?>">
+            </div>
+
             <div class="form-group">
                 <label>Categoria</label>
                 <select class="form-control" name="categoria">
@@ -72,10 +92,34 @@ $id = $_GET['id'];
                     <?php  } ?>
                 </select>
             </div>
+            
             <div class="form-group">
-                <label>Quantidade</label>
-                <input type="number" class="form-control" name="quantidade" value="<?php echo $quantidade?>">
+                    <label>Descrição do Produto</label>
+                    <input type="text" class="form-control" name="descricaoproduto" value="<?php echo $descricao?>">
             </div>
+
+            <div class="form-group">
+                    <label>Origem do Produto</label>
+                    <select class="form-control" name="origem">
+
+                        <?php 
+                        include 'conexao.php';
+
+                        $sql2 = "SELECT * FROM `origem`";
+                        $buscar2 = mysqli_query($conexao,$sql2);
+
+                        while ($array2 = mysqli_fetch_array($buscar2)) {
+                            $id_origem = $array2['id_origem'];
+                            $nom_origem = $array2['nom_origem'];
+                            
+                        ?>
+                        <option><?php echo $nom_origem ?></option>
+
+                        <?php  } ?>
+
+                    </select>
+            </div>
+        
             <div class="form-group">
                 <label>Fornecedor</label>
                 <select class="form-control" name="fornecedor">

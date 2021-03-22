@@ -34,6 +34,7 @@
         <div class="container" style="margin-top: 40px" id="container">
             <h3 style="text-align:center">Formulário de cadastro </h3>
             <form action="_inserir_produto.php" method="post" style="margin-top: 20px">
+
                 <div class="form-group">
                     <label>Nome do produto</label>
                     <input type="text" class="form-control" name="nomeproduto" placeholder="Insira o nome do produto"
@@ -78,8 +79,7 @@
 
                 <div class="form-group">
                     <label>Descrição do Produto</label>
-                    <input type="text" class="form-control" name="descricaoproduto" placeholder="Insira uma breve descrição"
-                        autocomplete="off">
+                    <input type="text" class="form-control" name="descricaoproduto" placeholder="Insira uma breve descrição" autocomplete="off">
                 </div>
 
                 <div class="form-group">

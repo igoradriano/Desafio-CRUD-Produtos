@@ -22,11 +22,11 @@
 
 * 1) Baixe o repositório para sua maquina ou faça um `Git Clone`;
 
-* 2) Instale e inicie o XAMPP (Se estiver utilizando Windows) ou o LAMP (se estiver usando Linux);
+* 2) Instale, configure e inicie o XAMPP ([Se estiver utilizando Windows](https://www.youtube.com/watch?v=COepL5-bNNI));
 
-* Coloque os arquivos PHP na pasta “htdocs” dentro da pasta “XAMMP” ou "LAMP";
+* 3)Coloque os arquivos do repositório da pasta PHP-HTML-CSS na pasta “htdocs” do seu computador (caminho: C:\xampp\htdocs);
 
-* Importe o banco de dados disponível na pasta "MySQL";
+* 4)Com o XAMPP funcionando, acesse no seu navegador o link: http://localhost/phpmyadmin/ , vá em NOVO -> IMPORTAR -> ESCOLHER ARQUIVO -> EXECUTAR e carregue o banco de dados disponível na pasta "MySQL";
 
 * Em seu navegador acesse "http://localhost/".
 

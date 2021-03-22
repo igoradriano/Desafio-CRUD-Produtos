@@ -34,3 +34,6 @@
 ## Licença
 Distribuído sob a licença MIT.
 
+## Acesso ao CRUD
+* Você pode criar um usuário diretamente no banco de Dados e colocar nível do usuário = 1 para ter acesso de administrador do sistema
+

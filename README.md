@@ -1,33 +1,17 @@
 # DESAFIO  - CRUD de Produtos
-Este Projeto foi desenvolvido utilizando as seguintes tecnologias:
 
-![](https://img.shields.io/github/languages/top/danielalves96/PHP-CRUD-Stock)
 
-## Screenshots
+## Este Projeto foi desenvolvido utilizando as seguintes tecnologias:
+* [JavaScript](https://www.javascript.com/)
+* [PHP](https://www.php.net/)
+* [XAMPP](https://www.apachefriends.org/pt_br/index.html)
+* [Bootstrap](https://getbootstrap.com/)
+* [DataTables](https://datatables.net/)
+* [MySQL](https://www.mysql.com/)
+* [Visual Studio Code](https://code.visualstudio.com/download)
 
-<table>
-	<tr>
-		<th width="100%">
-			Web Interface<br>
-		</th>
-	</tr>
-	<tr>
-		<td width="50%">
-			<img width="49.5%" src="https://github.com/danielalves96/Images/blob/master/Projetos/PHP/1.png?raw=true">	<img width="49.5%" src="https://github.com/danielalves96/Images/blob/master/Projetos/PHP/2.png?raw=true">
-			<br>
-			<img width="49.5%" src="https://github.com/danielalves96/Images/blob/master/Projetos/PHP/3.png?raw=true"> <img width="49.5%" src="https://github.com/danielalves96/Images/blob/master/Projetos/PHP/4.png?raw=true">
-			<br>
-			<img width="49.5%" src="https://github.com/danielalves96/Images/blob/master/Projetos/PHP/5.png?raw=true"> <img width="49.5%" src="https://github.com/danielalves96/Images/blob/master/Projetos/PHP/6.png?raw=true">
-			<br>
-			<center>
-			<img width="49.5%" src="https://github.com/danielalves96/Images/blob/master/Projetos/PHP/7.png?raw=true">
-			<br>
-			</center>
-		</td>
-	</tr>
-</table>
 
-<table>
+
   
 ## Features
 

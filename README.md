@@ -26,7 +26,7 @@
 
 * 3) Coloque os arquivos do repositório da pasta PHP-HTML-CSS na pasta “htdocs” do seu computador (caminho: C:\xampp\htdocs);
 
-* 4) Com o XAMPP funcionando, acesse no seu navegador o link: http://localhost/phpmyadmin/ , vá em NOVO -> IMPORTAR -> ESCOLHER ARQUIVO -> EXECUTAR e carregue o banco de dados disponível na pasta "MySQL";
+* 4) Com o XAMPP funcionando, acesse em seu navegador o link: http://localhost/phpmyadmin/ , vá em NOVO -> IMPORTAR -> ESCOLHER ARQUIVO -> EXECUTAR e carregue o banco de dados disponível na pasta "MySQL";
 
 * 5) Depois que o Banco de Dados estiver pronto, acesse em seu navegador o link: "http://localhost/". Ele vai abrir o local onde você armazenou a pasta contendo os arquivos PHP, clique nesta pasta e o site já estará rodando.
 

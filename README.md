@@ -17,6 +17,7 @@
 - Atualização de produtos;
 - Exclusão de produtos;
 - Filtro de pesquisa de produtos por variadas características do produto.
+- EXTRA: Cadastro de login;
 
 ## Execução do Repositório
 
@@ -31,4 +32,5 @@
 * 5) Depois que o Banco de Dados estiver pronto, acesse em seu navegador o link: "http://localhost/". Ele vai abrir o local onde você armazenou a pasta contendo os arquivos PHP, clique nesta pasta e o site já estará rodando.
 
 ## Licença
-Distribuído sob a licença MIT. Veja LICENSE para mais informações.
+Distribuído sob a licença MIT.
+

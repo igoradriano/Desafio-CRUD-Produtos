@@ -10,39 +10,19 @@
 * [MySQL](https://www.mysql.com/)
 * [Visual Studio Code](https://code.visualstudio.com/download)
 
+## Características
 
+- Cadastro de produtos;
+- Listagem de produtos;
+- Atualização de produtos;
+- Exclusão de produtos;
+- Filtro de pesquisa de produtos por variadas características do produto.
 
-  
-## Features
+## Execução do Repositório
 
-- Cadastro de produtos, categorias e fornecedores;
-- Listagem de produtos, categorias e fornecedores;
-- Atualização de produtos, categorias e fornecedores;
-- Exclusão de produtos, categorias e fornecedores;
-- Páginação nas listas de produtos, categorias e fornecedores;
-- Filtro de pesquisa de produtos por categorias, fornecedores, nome, número e quantidade;
+* 1) Baixe o repositório para sua maquina ou faça um `Git Clone`;
 
-
-## Tecnologias utilizadas
-Para o desenvolvimento do projeto, foram ulitizados os seguintes recursos:
-* [PHP](https://www.php.net/)
-* [JavaScript](https://www.javascript.com/)
-* [Bootstrap](https://getbootstrap.com/)
-* [DataTables](https://datatables.net/)
-* [jQuery](https://jquery.com/)
-* [XAMPP](https://www.apachefriends.org/pt_br/index.html)
-* [MySQL](https://www.mysql.com/)
-* [Visual Studio Code](https://code.visualstudio.com/download)
-
-## Desenvolvimento
-
-* **Website**: Construído utilizando PHP nativo, sem o usu de framework.
-
-## Instalação 
-
-* Para executar esse repositório baixe-o para sua maquina ou de um `Git Clone`;
-
-* Instale e inicie o XAMPP (Se estiver utilizando Windows) ou o LAMP (se estiver usando Linux);
+* 2) Instale e inicie o XAMPP (Se estiver utilizando Windows) ou o LAMP (se estiver usando Linux);
 
 * Coloque os arquivos PHP na pasta “htdocs” dentro da pasta “XAMMP” ou "LAMP";
 

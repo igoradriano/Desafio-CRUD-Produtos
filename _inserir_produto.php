@@ -10,9 +10,8 @@ $quantidade = $_POST['quantidade'];
 $fornecedor = $_POST['fornecedor'];
 $descricao = $_POST['descricaoproduto'];
 $origem = $_POST['origem'];
-$data = date("d/m/Y");
 
-$sql = "INSERT INTO `estoque`( `numproduto`, `nomeproduto`, `categoria`, `quantidade`, `fornecedor`,`descricaoproduto`) VALUES ($numproduto,'$nomeproduto','$categoria',$quantidade,'$fornecedor','$descricao')";
+$sql = "INSERT INTO `estoque`( `numproduto`, `nomeproduto`, `categoria`, `quantidade`, `fornecedor`,`descricaoproduto`,`origem`) VALUES ($numproduto,'$nomeproduto','$categoria',$quantidade,'$fornecedor','$descricao','$origem')";
 
 $inserir = mysqli_query($conexao, $sql);
 ?>

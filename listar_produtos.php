@@ -40,53 +40,57 @@
                         <th scope="col">Descrição</th>
                         <th scope="col">Fornecedor</th>
                         <th scope="col">Origem</th>
+                        <th scope="col">Data de Compra</th>
                         <th scope="col" style="min-width: 148px;text-align:center">Ação</th>
                     </tr>
                 </thead>
 
 
                 <?php
-                include 'conexao.php';
-                $sql = "SELECT * FROM `estoque`";
-                $busca = mysqli_query($conexao,$sql);
+                    include 'conexao.php';
+                    $sql = "SELECT * FROM `estoque`";
+                    $busca = mysqli_query($conexao,$sql);
 
-                while ($array = mysqli_fetch_array($busca)) {
-                    
-                    $id_estoque = $array['id_estoque'];
-                    $numproduto = $array['numproduto']; 
-                    $nomeproduto = $array['nomeproduto'];
-                    $categoria = $array['categoria'];
-                    $quantidade = $array['quantidade'];
-                    $fornecedor = $array['fornecedor'];
-                    $descricao = $array['descricaoproduto'];
-            ?>
-                <tr>
-                    <td style="vertical-align: inherit;"> <?php echo $nomeproduto ?> </td>
-                    <td style="vertical-align: inherit;">R$ <?php echo $numproduto ?> </td>
-                    <td style="vertical-align: inherit;"> <?php echo $quantidade ?> </td>
-                    <td style="vertical-align: inherit;"> <?php echo $categoria ?> </td>
-                    <td style="vertical-align: inherit;"> <?php echo $descricao ?> </td>
-                    <td style="vertical-align: inherit;"> <?php echo $fornecedor ?> </td>
-                    <td style="vertical-align: inherit;"> <?php echo $origem ?> </td>
-                    <td style="vertical-align: inherit;">
-                        <center>
+                    while ($array = mysqli_fetch_array($busca)) {
+                        
+                        $id_estoque = $array['id_estoque'];
+                        $numproduto = $array['numproduto']; 
+                        $nomeproduto = $array['nomeproduto'];
+                        $categoria = $array['categoria'];
+                        $quantidade = $array['quantidade'];
+                        $fornecedor = $array['fornecedor'];
+                        $descricao = $array['descricaoproduto'];
+                        $origem = $array['origem'];
+                        $dtcompra= $array['datacompra'];
+                ?>
+                    <tr>
+                        <td style="vertical-align: inherit;"> <?php echo $nomeproduto ?> </td>
+                        <td style="vertical-align: inherit;">R$ <?php echo $numproduto ?> </td>
+                        <td style="vertical-align: inherit;"> <?php echo $quantidade ?> </td>
+                        <td style="vertical-align: inherit;"> <?php echo $categoria ?> </td>
+                        <td style="vertical-align: inherit;"> <?php echo $descricao ?> </td>
+                        <td style="vertical-align: inherit;"> <?php echo $fornecedor ?> </td>
+                        <td style="vertical-align: inherit;"> <?php echo $origem ?> </td>
+                        <td style="vertical-align: inherit;"> <?php echo $dtcompra ?> </td>
+                        <td style="vertical-align: inherit;text-align:center">
                             <?php 
                             if(($nivel == 1)||($nivel == 2)){
                             ?>
-                            <a href="editar_produto.php?id=<?php echo $id_estoque ?>" role="button"
+                                <a href="editar_produto.php?id=<?php echo $id_estoque ?>" role="button"
                                 class="btn btn-warning btn-sm"><i class="far fa-edit"></i>&nbsp; Editar</a>
                             <?php } ?>
+
                             <?php 
                             if(($nivel == 1)){
                             ?>
-                            <a href="deletar_produto.php?id=<?php echo $id_estoque ?>" role="button"
+                                <a href="deletar_produto.php?id=<?php echo $id_estoque ?>" role="button"
                                 class="btn btn-danger btn-sm"><i class="far fa-trash-alt"></i>&nbsp; Excluir</a>
                             <?php } ?>
-                        </center>
-                    </td>
-                    <?php } ?>
+                            
+                        </td>
+                <?php } ?>
 
-                </tr>
+                    </tr>
             </table>
 
             <div style="text-align: right; margin-top:20px;">

@@ -28,18 +28,7 @@
 
 * 4)Com o XAMPP funcionando, acesse no seu navegador o link: http://localhost/phpmyadmin/ , vá em NOVO -> IMPORTAR -> ESCOLHER ARQUIVO -> EXECUTAR e carregue o banco de dados disponível na pasta "MySQL";
 
-* Em seu navegador acesse "http://localhost/".
-
-## Contribuições
-
-Contribuições são o que fazem a comunidade open source um lugar incrível para aprender, inspirar e criar. Qualquer contribuição que você fizer será muito apreciada.
-
-1. Faça um Fork do projeto
-2. Crie uma Branch para sua Feature (git checkout -b feature/FeatureNova)
-3. Adicione suas mudanças (git add .)
-4. Comite suas mudanças (git commit -m 'Adicionando uma Feature nova!)
-5. Faça o Push da Branch (git push origin feature/FeatureNoval)
-6. Abra uma Pull Request
+* 5) Depois que o Banco de Dados estiver pronto, acesse em seu navegador o link: "http://localhost/". Ele vai abrir o local onde você armazenou a pasta contendo os arquivos PHP, clique nesta pasta e o site já estará rodando.
 
 ## Licença
 Distribuído sob a licença MIT. Veja LICENSE para mais informações.

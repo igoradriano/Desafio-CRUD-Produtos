@@ -55,7 +55,7 @@
     </div>
 
     <div style="margin-top:15px; text-align: center">
-        <p>Não possuí cadastro? Clique <a href="cadastro_usuario_externo.php">aqui</a>!</p> <!--link para página de cadastro de login. Encaminha para o arquivo cadastro_usuario_externo.php-->
+        <p>Não possui cadastro? Clique <a href="cadastro_usuario_externo.php">aqui</a>!</p> <!--link para página de cadastro de login. Encaminha para o arquivo cadastro_usuario_externo.php-->
     </div>
 
     <script src="https://kit.fontawesome.com/cae6919cdb.js" crossorigin="anonymous"></script>
